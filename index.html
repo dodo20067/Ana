@@ -7,24 +7,42 @@
 <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-<button class="theme-toggle" onclick="toggleTheme()">
-  <span id="themeIcon">🌙</span>
-</button>
+<body class="dark">
 
-<header class="profile">
-  <img src="https://i.imgur.com/ZxMiSex.jpg" class="avatar">
-  <h1>Ana Carolina ✔</h1>
-  <p class="bio">
-    Oi, amor! Sou a Ana, a morena com carinha de safada que aqui te mostra tudo 🤭…  
-    Pronto pra me ver sem filtros (e sem roupa)? 😈💋
-  </p>
+<header class="top-bar">
+  <div class="logo">privacy<span>.</span></div>
+  <div class="actions">
+    <div class="theme-switch" onclick="toggleTheme()">
+      <div class="ball"></div>
+    </div>
+  </div>
 </header>
 
-<main class="actions">
-  <a href="packs.html" class="btn">🔥 Ver Packs</a>
-  <a href="vip.html" class="btn outline">💎 Entrar no VIP</a>
-</main>
+<section class="profile">
+  <img src="https://i.imgur.com/ZxMiSex.jpg" class="avatar">
+  <div class="name">
+    <h1>Ana Carolina</h1>
+    <span class="verified">✔</span>
+  </div>
+
+  <p class="bio">
+    Oi, amor! Sou a Ana, a morena com carinha de safada que aqui te mostra tudo 🤭  
+    Pronto pra me ver sem filtros (e sem roupa)? 😈💋
+  </p>
+
+  <div class="stats">
+    <div><b>307</b><span>Fotos</span></div>
+    <div><b>243</b><span>Vídeos</span></div>
+    <div><b>18.6K</b><span>Likes</span></div>
+  </div>
+</section>
+
+<section class="cta">
+  <a href="vip.html" class="cta-main">
+    ✨ Assinar agora <span>Conteúdo exclusivo</span>
+  </a>
+  <a href="packs.html" class="cta-secondary">Ver Packs 😈</a>
+</section>
 
 <script src="script.js"></script>
 </body>
