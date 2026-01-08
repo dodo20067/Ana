@@ -7,18 +7,28 @@
 <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-<button class="theme-toggle" onclick="toggleTheme()">
-  <span id="themeIcon">🌙</span>
-</button>
+<body class="dark">
 
-<h2 class="page-title">Grupo VIP 💎</h2>
+<section class="vip-box">
+  <h2>✨ Oferta de assinatura</h2>
+  <p class="vip-text">
+    Quer ver tudo, sem censura, e ainda falar comigo no privado?  
+    Então assina agora 😈
+  </p>
 
-<div class="card">1 mês – R$9,90<button onclick="pay('VIP 1 mês')">Já paguei</button></div>
-<div class="card">3 meses – R$29,90<button onclick="pay('VIP 3 meses')">Já paguei</button></div>
-<div class="card">6 meses – R$59,90<button onclick="pay('VIP 6 meses')">Já paguei</button></div>
+  <div class="vip-main">
+    <span class="discount">Economize 20%</span>
+    <button onclick="pay('VIP Mensal')">
+      Assinar agora <b>R$ 39,90</b>
+    </button>
+    <small>Preço original R$ 49,90</small>
+  </div>
 
-<button class="btn" onclick="copyPix()">Copiar Pix</button>
+  <div class="vip-options">
+    <button onclick="pay('VIP 3 meses')">3 meses <span>15% OFF</span> <b>R$ 127,24</b></button>
+    <button onclick="pay('VIP 6 meses')">6 meses <span>30% OFF</span> <b>R$ 209,58</b></button>
+  </div>
+</section>
 
 <script src="script.js"></script>
 </body>
